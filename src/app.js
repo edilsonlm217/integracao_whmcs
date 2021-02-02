@@ -24,6 +24,7 @@ class App {
   async watchDatabase() {
     const connection = mysql.createConnection({
       host: mkAuthDatabaseConfig.host,
+      password: 'vertrigo',
       port: 3306,
       user: mkAuthDatabaseConfig.username,
     });
